@@ -1,0 +1,17 @@
+[project]
+name = "six-sigma"
+version = "0.1.0"
+description = "Project to handle generating Lean Six Sigma Products"
+readme = "README.md"
+authors = [
+    { name = "Chris Gonzales", email = "christopher.anthony.gonzales@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+six-sigma = "six_sigma:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
