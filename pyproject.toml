@@ -7,7 +7,13 @@ authors = [
     { name = "Chris Gonzales", email = "christopher.anthony.gonzales@gmail.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.5",
+    "polars>=2.2.0",
+    "scipy>=1.18.1",
+    "seaborn>=0.13.2",
+]
 
 [project.scripts]
 six-sigma = "six_sigma:main"
@@ -15,3 +21,9 @@ six-sigma = "six_sigma:main"
 [build-system]
 requires = ["uv_build>=0.12.21,<0.13.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "ruff>=0.17.6",
+]
